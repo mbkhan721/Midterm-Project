@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { ResumeComponent } from './resume/resume.component';
+import { EducationComponent } from './resume/education/education.component';
+import { FooterComponent } from './resume/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -14,13 +17,17 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'resume', component: ResumeComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    ResumeComponent,
+    EducationComponent,
+    FooterComponent,
   ],
   bootstrap: [ AppComponent ]
 })
