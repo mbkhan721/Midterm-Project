@@ -1,14 +1,5 @@
 <h2>Products</h2>
 
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->
-
-<h2>Products</h2>
-
 <div *ngFor="let product of products">
 
   <h3>
@@ -22,16 +13,12 @@ can be found in the LICENSE file at http://angular.io/license
   </p>
 
   <button (click)="share()">
-  Share
- </button>
+    Share
+  </button>
 
   <app-product-alerts
-  [product]="product" 
-  (notify)="onNotify()">
-  </app-product-alerts>
-
-  <app-product-alerts
-  [product]="product">
+   [product]="product" 
+   (notify)="onNotify()">
   </app-product-alerts>
 
 </div>
