@@ -10,6 +10,8 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ResumeComponent } from './resume/resume.component';
 import { EducationComponent } from './resume/education/education.component';
 import { FooterComponent } from './resume/footer/footer.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { HeaderComponent } from './resume/header/header.component';
 
 @NgModule({
   imports: [
@@ -17,7 +19,10 @@ import { FooterComponent } from './resume/footer/footer.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'resume', component: ResumeComponent },
+      { path: 'education', component: EducationComponent },
+      { path: 'header', component: HeaderComponent },
     ])
   ],
   declarations: [
@@ -28,6 +33,8 @@ import { FooterComponent } from './resume/footer/footer.component';
     ResumeComponent,
     EducationComponent,
     FooterComponent,
+    ProductDetailsComponent,
+    HeaderComponent,
   ],
   bootstrap: [ AppComponent ]
 })

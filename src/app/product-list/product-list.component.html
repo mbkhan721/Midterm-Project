@@ -1,9 +1,9 @@
 <h2>Products</h2>
 
-<div *ngFor="let product of products">
+<div *ngFor="let product of products; index as productId">
 
   <h3>
-    <a [title]="product.name + ' details'">
+    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
       {{ product.name }}
     </a>
   </h3>
@@ -23,4 +23,6 @@
 
 </div>
 
-<app-resume></app-resume>
+<a [title]="'Click to view Muhammad\'\s resume'" [routerLink]="['/resume']">
+  <h3 color=#1976d2>Muhammad Khan's Resume</h3>
+</a>
