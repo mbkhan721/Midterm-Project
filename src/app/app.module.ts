@@ -36,7 +36,7 @@ import { HeaderComponent } from './resume/header/header.component';
     ProductDetailsComponent,
     HeaderComponent,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
 })
 export class AppModule { }
 
