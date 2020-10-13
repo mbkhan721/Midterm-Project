@@ -12,6 +12,8 @@ import { EducationComponent } from './resume/education/education.component';
 import { FooterComponent } from './resume/footer/footer.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HeaderComponent } from './resume/header/header.component';
+import { LeftColumnComponent } from './resume/left-column/left-column.component';
+import { RightColumnComponent } from './resume/right-column/right-column.component';
 
 @NgModule({
   imports: [
@@ -23,6 +25,8 @@ import { HeaderComponent } from './resume/header/header.component';
       { path: 'resume', component: ResumeComponent },
       { path: 'education', component: EducationComponent },
       { path: 'header', component: HeaderComponent },
+      { path: 'left-column', component: LeftColumnComponent },
+      { path: 'right-column', component: RightColumnComponent },
     ])
   ],
   declarations: [
@@ -35,6 +39,8 @@ import { HeaderComponent } from './resume/header/header.component';
     FooterComponent,
     ProductDetailsComponent,
     HeaderComponent,
+    LeftColumnComponent,
+    RightColumnComponent,
   ],
   bootstrap: [ AppComponent ],
 })
